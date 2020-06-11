@@ -3,44 +3,110 @@
     <head>
         <meta charset="utf-8">
         <title>
-
+            Product Page
         </title>
     </head>
     <body style="background-color: lightgray;">
         <main style="text-align: center;">
             <style>
-                @media (max-width: 500px){
-                body {
-                font-size: small;
+                @media (max-width: 600px){
+                #header {
+                visibility:hidden;
             }
+           
+        }
+        main{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             
         }
-                .nav-link{
+                .nav-bar{
                     display: flex;
+                    justify-content: center;
+                   
+                    
+                }
+               
+                #header{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    position: fixed;
+                    min-height: 100px;                   
+                    top: 0;
+                }
+                #header-img{
+                    margin-left: 20px;
+                }
+                #imgdiv{
+                    display: flex;
+                    width: 60vw;
+                }
+                ul{
+                   width: 40vw;
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: space-around;
+                   list-style: square;
+                }
+                #extrainfo{
+                    max-width: 600px;
+                    margin:auto;
+                }
+                #toptitle {
+                    margin-top: 110px;
+                }
+                a{
+                    text-decoration: none;
+                }
+                footer{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    display:flex;
                     justify-content: center;
                 }
             </style>
 
             <header id="header">
-                <img id="header-img" src="acoustic-guitar.jpg" width=100px;>
+                <div id="imgdiv">
+                <img id="header-img" src="acoustic-guitar-gray.jpg" width=200px;>
+               </div>
                 <nav id="nav-bar">
-                    <a class="nav-link" href="#header">Section 1</a>
-                    <a class="nav-link" href="#video">Section 2</a>
-                    <a class="nav-link" href="#form">Section 3</a>
-
-                    </a>
+                    <ul>
+                        <li> <a class="nav-link" href="#toptitle">Top</a></li>
+                        <li> <a class="nav-link" href="#video">Video</a></li>
+                        <li> <a class="nav-link" href="#extrainfotitle">Extra Info</a></li>
+                    </ul>
                 </nav>
             </header>
+        <div>
+            <h2 id="toptitle">MY AWESOME PRODUCT</h2>
 
+        </div>
             <iframe id="video" width="560" height="315"
              src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" frameborder="0" allow="encrypted-media;" allowfullscreen>
             </iframe>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <label id="email-label"> E-mail</label>
+                <label id="email-label"> Be informed when it releases:</label>
                  <input id="email" name="email" type="email" placeholder="Please enter your e-mail adress" required>
-                  <input id="submit" type="submit" value="Send answers">
+                  <input id="submit" type="submit" value="Let Me Know">
             </form>
-            
+            <h3 id="extrainfotitle">Here's why you should care:</h3>
+            <div id="extrainfo">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at metus mollis, congue lorem a, fermentum massa. Etiam scelerisque rutrum augue, semper lacinia risus gravida sit amet. Integer blandit ut erat ut dictum. Duis sagittis, tellus mattis convallis ultrices, turpis velit placerat mauris, quis elementum sem ipsum quis enim. Vestibulum at sapien turpis. Aenean sollicitudin ante vitae tellus mattis, ac luctus lorem mollis. Mauris vitae sem at ipsum iaculis molestie. Integer blandit purus vel quam ultrices, sit amet eleifend leo molestie. Praesent nec mi et lacus consectetur mattis.
+
+                Fusce id mattis massa, non ornare quam. Vestibulum quis feugiat enim. Donec enim lorem, faucibus a ullamcorper vitae, pretium nec ante. Maecenas fermentum sit amet sapien sed scelerisque. Aliquam vestibulum libero eget rutrum suscipit. Vivamus justo dui, molestie vel maximus vitae, pharetra at ligula. Maecenas ut risus eu velit congue porta ut in dui. Duis non lacus venenatis, hendrerit libero eget, efficitur felis. Mauris fermentum leo et turpis fringilla efficitur. Mauris lobortis porta aliquet. Sed a volutpat ligula. Phasellus ultrices malesuada ante, pulvinar porta tellus semper at. Nunc dui sem, commodo eu nunc eu, aliquet blandit dolor. Aenean ac orci et enim mattis pretium congue sit amet ante. Suspendisse quis lacus dignissim, placerat mauris ut, volutpat nisi.
+                
+                Aenean ornare nisl ipsum, nec elementum enim facilisis in. Praesent sollicitudin iaculis est id tristique. Nam suscipit egestas urna, id tempus lorem mollis ultricies. Pellentesque nunc purus, laoreet in interdum at, lacinia id dui. Ut pulvinar sagittis orci, eget eleifend nulla maximus sed. Curabitur posuere, odio vitae sagittis semper, orci lorem commodo augue, at imperdiet felis nunc non nulla. Quisque placerat massa ac nunc blandit, eget sodales felis porttitor. Etiam rhoncus lorem ac blandit pellentesque. Aliquam dapibus accumsan velit, non convallis ligula condimentum sit amet. Donec faucibus tellus nec laoreet dapibus. Praesent bibendum massa nec leo dictum tempus.
+                
+                Morbi nec dignissim lectus. Pellentesque venenatis felis id est aliquam, ut facilisis diam molestie. Curabitur fermentum porta facilisis. Praesent semper odio massa, vitae consectetur nisl tincidunt sed. Fusce sed lorem magna. Nullam at lobortis purus. Cras sagittis sit amet augue vel porttitor. Ut vel sagittis dui. Vestibulum sapien nulla, mollis quis nisi in, cursus ullamcorper leo. Nullam est sapien, placerat vel erat in, tempor interdum erat. Cras quis tortor nunc. Fusce eget convallis velit, sit amet luctus magna.
+                
+                Donec bibendum pharetra justo id suscipit. Suspendisse rutrum aliquam sapien ac feugiat. Etiam mattis pharetra massa, at ornare urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac ultrices ante. Praesent ornare est nec eros euismod, quis facilisis quam posuere. Phasellus a nisl orci. Etiam purus felis, tincidunt ac placerat in, fringilla vel magna. Morbi vehicula malesuada sapien non venenatis. Proin suscipit luctus urna ac scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            </div>
+            <footer>
+                <div>©<a href="https://www.github.com/yokn">VeryAwesomeProductsCorp </a>2020</div>               
+            </footer>
         </main>
     </body>
 <script id="fcc-test-suite"
